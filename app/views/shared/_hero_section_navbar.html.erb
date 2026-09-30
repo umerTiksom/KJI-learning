@@ -1,0 +1,65 @@
+<nav class="navbar navbar-expand-xl custom-navbar position-absolute" aria-label="Main navigation">
+  <div class="container-fluid">
+
+    <%= link_to root_path, class: "navbar-brand" do %>
+      <%= image_tag "logo.png",
+                    class: "navbar-logo",
+                    alt: "Knowles Johnson Institute" %>
+    <% end %>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#mainNavbar"
+      aria-controls="mainNavbar"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+
+      <form class="navbar-search d-flex mx-xl-4 my-3 my-xl-0" role="search" action="#" method="get">
+
+        <input
+          type="search"
+          name="q"
+          class="form-control"
+          placeholder="Search events"
+          aria-label="Search events"
+        >
+
+        <button type="submit" class="search-btn position-absolute" aria-label="Search">
+          <i class="bi bi-search" aria-hidden="true"></i>
+        </button>
+
+      </form>
+
+      <ul class="navbar-nav nav-links gap-lg-4 ms-lg-5 ">
+
+        <li class="nav-item"><%= link_to "Home", root_path ,class:"nav-link active" %></li>
+        <li class="nav-item"><%= link_to "About", "#" ,class:"nav-link"%></li>
+        <li class="nav-item"><%= link_to "Events", "#" ,class:"nav-link"%></li>
+        <li class="nav-item"><%= link_to "Membership", "#",class:"nav-link" %></li>
+
+      </ul>
+
+
+      <!-- Actions -->
+      <div class="navbar-actions">
+
+        <%= link_to "Login", "#", class: "login-link" %>
+
+        <%= link_to "#", class: "member-btn fs-4 fw-medium gap-2" do %>
+          Become a Member
+          <i class="bi bi-arrow-right" aria-hidden="true"></i>
+        <% end %>
+
+      </div>
+
+    </div>
+
+  </div>
+</nav>
