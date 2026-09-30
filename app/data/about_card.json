@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "icons/book.png",
+    "title": "Learn from Experts",
+    "description": "Access world-class sessions, insights and resources."
+  },
+  {
+    "icon": "icons/people.png",
+    "title": "Connect with Professionals",
+    "description": "Build meaningful relationships across industries and borders."
+  },
+  {
+    "icon": "icons/bulb.png",
+    "title": "Access Exclusive Events",
+    "description": "Be part of curated events, webinars and leadership forums."
+  },
+  {
+    "icon": "icons/internet.png",
+    "title":"Create Global Impact",
+    "description": "Contribute to a stronger, more inclusive future."
+  }
+]
