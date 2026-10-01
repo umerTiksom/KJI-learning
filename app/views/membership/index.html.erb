@@ -1,0 +1,110 @@
+<style>
+  *
+  {
+      padding: 0;
+      margin: 0;
+  }
+
+    @font-face {
+        font-family: "Main_font1";
+        src: url("/assets/HelveticaNowDisplay-Black.woff2") format("woff2");
+        font-weight: 900;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Main_font1_paragraph";
+        src: url("/assets/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+        font-weight: 100 900;
+        font-style: normal;
+
+    }
+  .paragraph
+  {
+      font-family: "Main_font1_paragraph";
+  }
+</style>
+<div class="container-fluid hero-section position-relative">
+  <div class="container context-container px-5 h-auto">
+    <div class="d-flex">
+      <div class="text-section flex-grow-1 mt-4  py-5". style="margin-left: 30px">
+        <div class="d-flex flex-row align-items-center gap-2 py-3">
+          <div style="width:32px;height: 3px" class="bg-warning"></div>
+          <p class="mb-0" style="max-width: 158px;font-size: 20px;font-weight: 400">KJI Membership</p>
+        </div>
+         <h1 style="max-width: 783px;max-height: 162px;font-size: 80px;line-height: 81px;font-family: "Main_font1",Sans-Serif " class="fw-bold">Join the <span class="text-warning">KJI Learning</span>  Community</h1>
+
+        <p class="mt-3" style="font-weight: 400; font-size: 23px; max-width: 576px;max-height: 64px;line-height: 31px;font-family:"Main_font1_paragraph"">
+        Connect with professionals, access exclusive events, and grow through knowledge sharing.
+        </p>
+        <div class="d-flex flex-md-row gap-3 mt-2" >
+          <%= button_tag class: "border-0 rounded-5 bg-warning p-1 fw-medium px-3" do%>
+            Become a Member
+            <i class="bi bi-arrow-up-right" aria-hidden="true" style="height: 16px;width: 16px"></i>
+          <% end %>
+          <%= button_tag "Explore Events", class:"border-1 rounded-5 px-3"%>
+        </div>
+        <div class="d-flex align-items-center mt-4 gap-4 py-3">
+          <div>
+            <h3 style="max-height: 22px;max-width: 81px">500+</h3>
+            <small>Member</small>
+          </div>
+          <div>
+            <h3 style="max-height: 22px;max-width: 81px">100+</h3>
+            <small>Events</small>
+          </div>
+          <div>
+            <h3 style="max-height: 22px;max-width: 81px">Global</h3>
+            <small>Community</small>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex " >
+        <%= image_tag "membership/membership_main.png" ,style: "max-width: 529px;max-height:662px;border-radius:24px" %>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="container-fluid h-auto w-100 ">
+  <div class="p-3">
+    <h1 class="p-5" style="font-size: 58px;font-weight: 500;max-height: 120px">Why Become a Member?</h1>
+    <div class="row g-3 p-5">
+      <% @membership_card.each do |card| %>
+        <%= render "shared/membership_cards", card: card %>
+      <% end %>
+    </div>
+  </div>
+  <%# ready to join %>
+  <div class="p-5">
+  <div class="bg-warning d-flex justify-content-between align-items-center p-5 rounded-5" style="max-width: 1456px;max-height: 268px">
+    <%# text section %>
+    <div>
+    <h1>Ready to join KJI?</h1>
+    <p class="py-2" style="font-size: 17px;width: 512px;line-height: 25px;height: 52px;font-family:Main_font1_paragraph ">Become part of a global community built around knowledge, leadership and impact.</p>
+    <div class="d-flex gap-2">
+      <div class="d-flex gap-2">
+        <i class="bi-check" style="width: 9px;height: 9px"></i>
+        <small style="font-size: 14px;line-height: 21px;font-family: Main_font1_paragraph">Community access</small>
+      </div>
+      <div class="d-flex gap-2">
+        <i class="bi-check" style="width: 9px;height: 9px"></i>
+        <small style="font-size: 14px;line-height: 21px;font-family: Main_font1_paragraph">Exclusive events</small>
+      </div>
+      <div class="d-flex gap-2">
+        <i class="bi-check" style="width: 9px;height: 9px"></i>
+        <small style="font-size: 14px;line-height: 21px;font-family: Main_font1_paragraph"> Learning resources</small>
+      </div>
+
+    </div>
+    </div>
+    <%# button section %>
+    <div>
+      <%= button_tag "Become a Member" ,style:"width:209px;height:54px;background:#14243F",class:"rounded-5 border-0 text-white"%>
+    </div>
+  </div>
+  </div>
+</div>
+<div style="background:#F5F2EF">
+<%= render "shared/footer" %>
+</div>

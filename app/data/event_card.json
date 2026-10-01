@@ -1,0 +1,80 @@
+[
+  {
+    "image": "event_cards/event_card1.png",
+    "type": "IN PERSON",
+    "month": "OCT",
+    "date": "24",
+    "year": "2026",
+    "title": "Leadership in a Changing World",
+    "location": "New York, USA",
+    "time": "9:00 AM - 5:00 PM",
+    "speaker_image": "event_cards/card_profile.png",
+    "speaker_name": "Dr. Michael Reeves",
+    "speaker_role": "Global Leadership Expert"
+  },
+  {
+    "image": "event_cards/event_card2.png",
+    "type": "VIRTUAL",
+    "month": "OCT",
+    "date": "24",
+    "year": "2026",
+    "title": "Leadership in a Changing World",
+    "location": "New York, USA",
+    "time": "9:00 AM - 5:00 PM",
+    "speaker_image": "event_cards/card_profile.png",
+    "speaker_name": "Dr. Michael Reeves",
+    "speaker_role": "Global Leadership Expert"
+  },
+  {
+    "image": "event_cards/event_card3.png",
+    "type": "HYBRID",
+    "month": "OCT",
+    "date": "24",
+    "year": "2026",
+    "title": "Leadership in a Changing World",
+    "location": "New York, USA",
+    "time": "9:00 AM - 5:00 PM",
+    "speaker_image": "event_cards/card_profile.png",
+    "speaker_name": "Dr. Michael Reeves",
+    "speaker_role": "Global Leadership Expert"
+  },
+  {
+    "image": "event_cards/event_card1.png",
+    "type": "IN PERSON",
+    "month": "OCT",
+    "date": "24",
+    "year": "2026",
+    "title": "Leadership in a Changing World",
+    "location": "New York, USA",
+    "time": "9:00 AM - 5:00 PM",
+    "speaker_image": "event_cards/card_profile.png",
+    "speaker_name": "Dr. Michael Reeves",
+    "speaker_role": "Global Leadership Expert"
+  },
+  {
+    "image": "event_cards/event_card2.png",
+    "type": "VIRTUAL",
+    "month": "OCT",
+    "date": "24",
+    "year": "2026",
+    "title": "Leadership in a Changing World",
+    "location": "New York, USA",
+    "time": "9:00 AM - 5:00 PM",
+    "speaker_image": "event_cards/card_profile.png",
+    "speaker_name": "Dr. Michael Reeves",
+    "speaker_role": "Global Leadership Expert"
+  },
+  {
+    "image": "event_cards/event_card3.png",
+    "type": "HYBRID",
+    "month": "OCT",
+    "date": "24",
+    "year": "2026",
+    "title": "Leadership in a Changing World",
+    "location": "New York, USA",
+    "time": "9:00 AM - 5:00 PM",
+    "speaker_image": "event_cards/card_profile.png",
+    "speaker_name": "Dr. Michael Reeves",
+    "speaker_role": "Global Leadership Expert"
+  }
+]

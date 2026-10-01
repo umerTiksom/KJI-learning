@@ -1,0 +1,22 @@
+[
+  {
+    "logo": "membership/icons/Book.png",
+    "title": "Learn From Experts",
+    "description": "Access world-class sessions, talks and resources led by industry leaders."
+  },
+  {
+    "logo": "membership/icons/Users.png",
+    "title": "Connect With Professionals",
+    "description": "Build meaningful relationships across industries, disciplines and borders."
+  },
+  {
+    "logo": "membership/icons/Calendar.png",
+    "title": "Join Exclusive Events",
+    "description": "Be first in line for curated summits, webinars and leadership forums."
+  },
+  {
+    "logo": "membership/icons/Growth.png",
+    "title": "Grow Your Network",
+    "description": "Surround yourself with change-makers and accelerate your own impact."
+  }
+]
