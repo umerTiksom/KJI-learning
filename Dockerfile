@@ -35,6 +35,18 @@ RUN apt-get update -qq && \
     apt-get install --no-install-recommends -y build-essential git libyaml-dev pkg-config && \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
+# Install Node.js and Yarn (via Corepack) for cssbundling-rails
+ARG NODE_VERSION=22.11.0
+ENV PATH=/usr/local/node/bin:$PATH
+RUN apt-get update -qq && \
+    apt-get install --no-install-recommends -y ca-certificates curl && \
+    ARCH="$(uname -m)" && \
+    case "$ARCH" in x86_64) NODE_ARCH=x64 ;; aarch64) NODE_ARCH=arm64 ;; *) echo "unsupported arch $ARCH" && exit 1 ;; esac && \
+    mkdir -p /usr/local/node && \
+    curl -fsSL "https://nodejs.org/dist/v${NODE_VERSION}/node-v${NODE_VERSION}-linux-${NODE_ARCH}.tar.gz" | tar -xz -C /usr/local/node --strip-components=1 && \
+    corepack enable && \
+    rm -rf /var/lib/apt/lists /var/cache/apt/archives
+
 # Install application gems
 COPY vendor/* ./vendor/
 COPY Gemfile Gemfile.lock ./
@@ -43,6 +55,10 @@ RUN bundle install && \
     rm -rf ~/.bundle/ "${BUNDLE_PATH}"/ruby/*/cache "${BUNDLE_PATH}"/ruby/*/bundler/gems/*/.git && \
     # -j 1 disable parallel compilation to avoid a QEMU bug: https://github.com/rails/bootsnap/issues/495
     bundle exec bootsnap precompile -j 1 --gemfile
+
+# Install JavaScript dependencies
+COPY package.json yarn.lock .yarnrc.yml ./
+RUN yarn install --immutable
 
 # Copy application code
 COPY . .
