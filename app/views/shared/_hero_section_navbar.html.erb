@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-xl custom-navbar position-absolute" aria-label="Main navigation">
+<nav class="navbar d-flex  navbar-expand-xl custom-navbar position-absolute" aria-label="Main navigation">
   <div class="container-fluid">
 
     <%= link_to root_path, class: "navbar-brand" do %>
@@ -19,25 +19,8 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="mainNavbar">
-
-      <form class="navbar-search d-flex mx-xl-4 my-3 my-xl-0" role="search" action="#" method="get">
-
-        <input
-          type="search"
-          name="q"
-          class="form-control"
-          placeholder="Search events"
-          aria-label="Search events"
-        >
-
-        <button type="submit" class="search-btn position-absolute" aria-label="Search">
-          <i class="bi bi-search" aria-hidden="true"></i>
-        </button>
-
-      </form>
-
-      <ul class="navbar-nav nav-links gap-lg-4 ms-lg-2 ">
+    <div class="collapse navbar-collapse px-md-3" id="mainNavbar">
+      <ul class="navbar-nav nav-links gap-lg-4 px-md-4 ", style="margin-left: 17%">
 
         <li class="nav-item"><%= link_to "Home", root_path ,class:"nav-link #{'active' if current_page?(root_path)}" %></li>
         <li class="nav-item"><%= link_to "About", "#" ,class:"nav-link"%></li>

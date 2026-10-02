@@ -1,73 +1,138 @@
-<div class="row  d-flex justify-content-center ">
-  <div class="row" style="padding: 70px;max-height: 485px" >
+
+<div class="row d-flex justify-content-center overflow-hidden">
+  <div class="row" style="padding: 70px; max-height: 485px">
+
     <%# logo section %>
     <div class="col-sm">
       <%# main container %>
       <div class="container">
-        <%= image_tag "logo.png" ,style: "width: 176px"%>
-        <p class="fw-normal py-3" style="font-size: 17px;line-height: 22px;width: 330px;opacity: 70%">A global learning community bringing together professionals, thought leaders and change-makes to create a more inclusive, innovative future.</p>
+        <%= image_tag "logo.png", style: "width: 176px" %>
+
+        <p class="fw-normal py-3"
+           style="font-size: 17px; line-height: 22px; width: 330px; opacity: 70%">
+          A global learning community bringing together professionals, thought leaders
+          and change-makes to create a more inclusive, innovative future.
+        </p>
+
         <%# icons section %>
         <div class="d-flex gap-4" style="width: 216px; height: 26px">
-          <%= image_tag "icons/facebook.png" ,style: "width: 13px; height:26px"%>
-          <%= image_tag "icons/insta.png" ,style: "width: 26px; height:26px"%>
-          <%= image_tag "icons/twitter.png",style: "width: 29px; height:26px" %>
-          <%= image_tag "icons/youtube.png",style: "width: 33px; height:26px" %>
+          <%= image_tag "icons/facebook.png", style: "width: 13px; height: 26px" %>
+          <%= image_tag "icons/insta.png", style: "width: 26px; height: 26px" %>
+          <%= image_tag "icons/twitter.png", style: "width: 29px; height: 26px" %>
+          <%= image_tag "icons/youtube.png", style: "width: 33px; height: 26px" %>
         </div>
       </div>
     </div>
+
     <%# quick links %>
     <div class="col-sm">
-      <h3 style="font-size: 24px;font-weight: 600;width: 128px;height: 29px">Quick Links</h3>
-      <div class="d-flex flex-column py-3" style="width: 105px;height: 268px">
-        <%= link_to "Home", root_path, class: "text-decoration-none text-dark py-2", style:"opacity:70%" %>
-        <%= link_to "About","#", class: "text-decoration-none text-dark py-2", style:"opacity:70%" %>
-        <%= link_to "Events", "#",class: "text-decoration-none text-dark py-2", style:"opacity:70%"%>
-        <%= link_to " Membership", '#',class: "text-decoration-none text-dark py-2", style:"opacity:70%"%>
-        <%= link_to "Community", '#',class: "text-decoration-none text-dark py-2", style:"opacity:70%"%>
-        <%= link_to "Resources", '#',class: "text-decoration-none text-dark py-2", style:"opacity:70%" %>
+      <h3 style="font-size: 24px; font-weight: 600; width: 128px; height: 29px">
+        Quick Links
+      </h3>
+
+      <div class="d-flex flex-column py-3" style="width: 105px; height: 268px">
+        <%= link_to "Home", root_path,
+                    class: "text-decoration-none text-dark py-2", style: "opacity:70%" %>
+
+        <%= link_to "About", "#",
+                    class: "text-decoration-none text-dark py-2", style: "opacity:70%" %>
+
+        <%= link_to "Events", "#",
+                    class: "text-decoration-none text-dark py-2", style: "opacity:70%" %>
+
+        <%= link_to "Membership", "#",
+                    class: "text-decoration-none text-dark py-2", style: "opacity:70%" %>
+
+        <%= link_to "Community", "#",
+                    class: "text-decoration-none text-dark py-2", style: "opacity:70%" %>
+
+        <%= link_to "Resources", "#",
+                    class: "text-decoration-none text-dark py-2", style: "opacity:70%" %>
       </div>
     </div>
-    <%# contact us  %>
+
+    <%# contact us %>
     <div class="col-sm">
-      <h3 style="font-size: 24px;font-weight: 600;max-width: 125px">Contact Us</h3>
+      <h3 style="font-size: 24px; font-weight: 600; max-width: 125px">
+        Contact Us
+      </h3>
+
       <div class="py-3">
         <div class="d-flex flex-row gap-2 py-2 align-items-center">
-          <%= image_tag "icons/location.png" ,style:"max-width:18px; max-height:21px"%>
-          <p class="mb-0" style="font-size: 18px;font-weight: 300;max-width: 153px;opacity: 70%">New York, USA</p>
+          <%= image_tag "icons/location.png",
+                        style: "max-width:18px; max-height:21px" %>
+
+          <p class="mb-0"
+             style="font-size:18px; font-weight:300; max-width:153px; opacity:70%">
+            New York, USA
+          </p>
         </div>
+
         <div class="d-flex gap-2 py-2 align-items-center">
-          <%= image_tag "icons/mail.png", style: "max-width:20px; max-height:16px"%>
-          <p class="mb-0" style="font-size: 18px;font-weight: 300;opacity: 70%">info@kji.org</p>
+          <%= image_tag "icons/mail.png",
+                        style: "max-width:20px; max-height:16px" %>
+
+          <p class="mb-0"
+             style="font-size:18px; font-weight:300; opacity:70%">
+            info@kji.org
+          </p>
         </div>
+
         <div class="d-flex gap-2 py-2 align-items-center">
-          <%= image_tag "icons/phone.png", style: "max-width:18px;max-height:18px" %>
-          <p class="mb-0" style="opacity: 70%;font-size: 18px;font-weight: 300">+1 (555) 123 4567</p>
+          <%= image_tag "icons/phone.png",
+                        style: "max-width:18px; max-height:18px" %>
+
+          <p class="mb-0"
+             style="opacity:70%; font-size:18px; font-weight:300">
+            +1 (555) 123 4567
+          </p>
         </div>
       </div>
     </div>
+
     <%# stay updated %>
     <div class="col-sm">
-      <h3 style="font-size: 24px;font-weight: 600;max-width: 151px;">Stay Updated</h3>
-      <p class="py-3" style="font-size: 18px;line-height: 26px;opacity: 70%">Get the latest events, insights and opportunities from KJI.</p>
-      <form class="navbar-search d-flex gap-3" style="max-width: 325px;max-height: 43px" role="search" action="#" method="get">
+      <h3 style="font-size:24px; font-weight:600; max-width:151px;">
+        Stay Updated
+      </h3>
+
+      <p class="py-3"
+         style="font-size:18px; line-height:26px; opacity:70%">
+        Get the latest events, insights and opportunities from KJI.
+      </p>
+
+      <form class="navbar-search d-flex gap-3"
+            style="max-width:325px; max-height:43px"
+            role="search"
+            action="#"
+            method="get">
 
         <input
           type="search"
           name="q"
           class="form-control"
           placeholder="Enter your email"
-          aria-label="Search events"
-        >
+          aria-label="Search events">
 
-        <button type="submit" class="search-btn " aria-label="Search" style="background: #EE8035;max-width: 43px;max-height: 43px">
+        <button
+          type="submit"
+          class="search-btn"
+          aria-label="Search"
+          style="background:#EE8035; max-width:43px; max-height:43px">
+
           <i class="bi bi-arrow-right" aria-hidden="true"></i>
         </button>
-
       </form>
     </div>
-    <hr class="border-2 mt-5" style="width: 100%">
-    <div class="w-100 text-center py-3">
-      <p class="fw-light" style="font-size: 22px;font-weight: 500">©2026 KJI Community | All Rights Reserved</p>
+
+    <hr class="border-2 mt-5" style="width:100%">
+
+    <div class="w-100 text-center py-1">
+      <p class="fw-light"
+         style="font-size:22px; font-weight:500">
+        ©2026 KJI Community | All Rights Reserved
+      </p>
     </div>
+
   </div>
 </div>

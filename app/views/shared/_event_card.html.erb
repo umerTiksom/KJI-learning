@@ -41,22 +41,22 @@
 
 
     <!-- Card Content -->
-    <div class=" mt-0 "; style="height: 250px;background: #D9D9D9">
+    <div class=" mt-0 bg-white shadow-sm"; style="height: 250px">
     <div class="event-card-body mt-3 ms-3 ">
 
       <!-- Date + Title -->
-      <div class="d-flex align-items-start gap-3">
+      <div class="d-flex flex-column px-2 align-items-start gap-3">
 
         <!-- Date -->
-        <div class="event-date d-flex flex-column flex-shrink-0 justify-content-center align-items-center px-3">
+        <div class="event-date flex-shrink-0 justify-content-center align-items-center text-secondary">
 
           <span class="event-month fw-medium">
             <%= card["month"] %>
           </span>
 
-          <strong class="event-day">
-            <%= card["date"] %>
-          </strong>
+          <span class="event-day">
+            <%= card["date"] %>,
+          </span>
 
           <span class="event-year fw-medium">
             <%= card["year"] %>
@@ -66,21 +66,21 @@
 
 
         <!-- Title + Info -->
-        <div class="flex-grow-1">
+        <div class="">
 
           <h3 class="event-title">
             <%= card["title"] %>
           </h3>
 
-          <div class="event-info" style="gap: 34px;width: 370px">
+          <div class="event-info d-flex flex-md-column" style="gap: 13px;width: 370px">
 
             <span>
-              <i class="bi bi-geo-alt"></i>
+              <i class="bi bi-geo-alt text-warning"></i>
               <%= card["location"] %>
             </span>
 
             <span>
-              <i class="bi bi-clock ms-4" ></i>
+              <i class="bi bi-clock text-warning" ></i>
               <%= card["time"] %>
             </span>
 
@@ -117,7 +117,7 @@
 
 
         <!-- Button -->
-        <%= button_tag class: "event-details-btn flex-shrink-0 me-2 border-1 rounded-5", style:"width:126px;height:44px;font-size:14px;font-weight:500; background:#D9D9D9" do %>
+        <%= button_tag class: "event-details-btn flex-shrink-0 me-2 border-1 rounded-5 text-white", style:"width:126px;height:44px;font-size:14px;font-weight:500; background:#071A33" do %>
           View Details
           <i class="bi bi-arrow-right" style=" "></i>
         <% end %>
