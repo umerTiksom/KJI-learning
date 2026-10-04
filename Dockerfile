@@ -38,6 +38,9 @@ RUN apt-get update -qq && \
     npm && \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
+RUN npm install -g corepack && \
+    corepack enable
+
 # Install application gems
 COPY vendor/* ./vendor/
 COPY Gemfile Gemfile.lock ./
