@@ -36,7 +36,6 @@ RUN apt-get update -qq && \
     pkg-config \
     nodejs \
     npm && \
-    npm install -g yarn && \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
 # Install application gems
@@ -52,7 +51,7 @@ RUN bundle install && \
 # Install JavaScript dependencies
 # These files are copied before the rest of the application
 # so Docker can cache this step
-COPY package.json yarn.lock ./
+COPY package.json yarn.lock .yarnrc.yml ./
 
 RUN yarn install --immutable
 
